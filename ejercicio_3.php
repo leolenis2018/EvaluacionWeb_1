@@ -4,17 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Ejercicio Matemático</title>
 </head>
 
 <body>
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.php">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </nav>
+    </header>
 
     <div id="texto">
-        <p>Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal.
-            <p>Se sabe que si trabaja 40 horas o menos, se le pagará $20000 por hora; pero si trabaja más de 40 horas; entonces las horas extras se le pagarán a $25000 por hora.</p>
+        <p>El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus usuarios calcular el índice de masa corporal basado en el formula: <p>𝐼𝑀𝐶=𝑃𝐸𝑆𝑂 /𝐴𝐿𝑇𝑈𝑅𝐴∗𝐴𝐿𝑇𝑈𝑅𝐴</p>       
         </p>
         <form method="post" action="ejercicio_3.php">
             <div id="valores">
@@ -30,13 +37,13 @@
 
         <?php
 
-        if (isset($_POST["calcular_imc"])) 
-        {
+        if (isset($_POST["calcular_imc"])) {
             $peso = $_POST["peso"];
             $altura  = $_POST["altura"];
         }
+      
+        $total =  $peso / ($altura * $altura);
 
-        $total =  $peso / ($altura *  $altura);
         if ($total <= 18.5) {
             $clasificacion =  "Peso Insuficiente";
         } else if ($total > 18.5 && $total <= 24.9) {
@@ -57,9 +64,6 @@
             $total = "";
             $clasificacion = " ";
         }
-
-
-
 
         ?>
         <div id="total">
