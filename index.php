@@ -18,7 +18,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="ejercicio_1.php">Ejercicio 1 <span class="sr-only">(current)</span></a>
@@ -32,9 +32,6 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="ejercicio_4.php">Ejercicio 4 <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="ejercicio_5.php">Ejercicio 5 <span class="sr-only">(current)</span></a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -43,13 +40,13 @@
 
 
     <main>
-        <?php
-        echo ("Hola Mundo");
 
-
-        ?>
-
-
+        <div class="intro">
+            <h1>Programación para la Web I</h1>
+            <p>Docente: Juan José Gallego Mesa</p>
+            <p>Tel: 322 596 2363</p>
+            <p></p>
+        </div>
     </main>
 
 

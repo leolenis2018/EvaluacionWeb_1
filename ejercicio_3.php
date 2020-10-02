@@ -25,8 +25,8 @@
         </p>
         <form method="post" action="ejercicio_3.php">
             <div id="valores">
-                <input type="text" name="peso" class="valores_2" placeholder="Ingrese su peso" />
-                <input type="text" name="altura" class="valores_2" placeholder="Ingrese su Estatura" />
+                <input type="text" name="peso" class="valores_2" placeholder="Ingresar Peso" />
+                <input type="text" name="altura" class="valores_2" placeholder="Ingresar Estatura" />
 
             </div>
             <div id="botones">
