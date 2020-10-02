@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.php">Inicio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
     </header>
 
     <div id="texto">
-        <p>El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus usuarios calcular el índice de masa corporal basado en el formula: <p>𝐼𝑀𝐶=𝑃𝐸𝑆𝑂 /𝐴𝐿𝑇𝑈𝑅𝐴∗𝐴𝐿𝑇𝑈𝑅𝐴</p>       
+        <p>El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus usuarios calcular el índice de masa corporal basado en el formula: <p>𝐼𝑀𝐶=𝑃𝐸𝑆𝑂 /𝐴𝐿𝑇𝑈𝑅𝐴∗𝐴𝐿𝑇𝑈𝑅𝐴</p>
         </p>
         <form method="post" action="ejercicio_3.php">
             <div id="valores">
@@ -41,7 +41,6 @@
             $peso = $_POST["peso"];
             $altura  = $_POST["altura"];
         }
-      
         $total =  $peso / ($altura * $altura);
 
         if ($total <= 18.5) {

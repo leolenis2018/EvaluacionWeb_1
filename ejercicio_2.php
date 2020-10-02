@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/estilos_2.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Ejercicio Matemático</title>
 </head>
@@ -19,7 +19,7 @@
 
         </nav>
     </header>
-
+    
     <div id="texto">
         <p>Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal.
             <p>Se sabe que si trabaja 40 horas o menos, se le pagará $20000 por hora; pero si trabaja más de 40 horas; entonces las horas extras se le pagarán a $25000 por hora.</p>

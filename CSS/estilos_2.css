@@ -14,10 +14,9 @@
     padding: 10px;
     font-size: 20px;
     color: #02010e;
-    background-color: #65a4eb;
+    background-color: #eebd1d;
     border-radius: 15px;
-    border: 5px solid rgb(7, 112, 21);
-    size: 50%;
+    border: 5px solid rgb(3, 9, 61);
 }
 
 #total {

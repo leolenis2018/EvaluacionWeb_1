@@ -43,30 +43,19 @@
             $cantidad  = $_POST["cantidad"];
         }
 
-
         if (isset($_POST["calcular"]))
             if ($cantidad = 3) {
                 $total = $precio * $cantidad;
                 $descuento = $total * 0.1;
                 $total_pagar = $total - $descuento;
-            } else if (isset($_POST["calcular"]) and $cantidad > 8) {
+            } else if ($cantidad > 8) {
                 $total = $precio * $cantidad;
                 $descuento = $total * 0.5;
                 $total_pagar = $total - $descuento;
             } else {
-                $descuento = 0;
-                $total_pagar = 0;
+                $descuento = "";
+                $total_pagar = "";
             }
-
-
-
-
-
-
-
-
-
-
         ?>
         <div id="total">
             <label for="">Descuento</label>
