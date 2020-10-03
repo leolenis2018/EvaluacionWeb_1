@@ -19,7 +19,6 @@
 
         </nav>
     </header>
-    
     <div id="texto">
         <p>Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal.
             <p>Se sabe que si trabaja 40 horas o menos, se le pagará $20000 por hora; pero si trabaja más de 40 horas; entonces las horas extras se le pagarán a $25000 por hora.</p>

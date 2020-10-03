@@ -53,6 +53,10 @@ p {
     line-height: 15px;
 }
 
+span {
+    text-align: center;
+}
+
 header {
     margin-left: 25px;
     margin-right: 25px;

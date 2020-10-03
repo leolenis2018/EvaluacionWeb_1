@@ -1,0 +1,27 @@
+footer {
+    margin-top: 100px;
+    text-align: center;
+    color: ghostwhite;
+    background-color: #000;
+}
+
+.introduccion {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+p {
+    color: rgb(170, 22, 22);
+    font-weight: bold;
+    font-family: Garamond;
+}
+
+header {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
