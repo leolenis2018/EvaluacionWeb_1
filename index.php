@@ -21,16 +21,16 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="ejercicio_1.php">Ejercicio 1 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="ejercicio_1.php">Calculadora<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="ejercicio_2.php">Ejercicio 2 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="ejercicio_2.php">Salario Postobón<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="ejercicio_3.php">Ejercicio 3 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="ejercicio_3.php">Calcular IMC<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="ejercicio_4.php">Ejercicio 4 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="ejercicio_4.php">Descuentos Zapatos<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

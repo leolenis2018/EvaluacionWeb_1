@@ -22,8 +22,7 @@
     </header>
     <main>
         <div id="texto">
-            <p>Hacer un programa en PHP que permita mostrar en pantalla la suma, resta,
-                <p> multiplicación y división de dos números enteros; almacenados en 2 variables diferentes.</p>
+            <h1>Calculadora</h1>
         </div>
         <form method="POST" action="ejercicio_1.php">
             <div id="valores">
@@ -36,38 +35,36 @@
                 <button type="submit" name="multiplicar" class="botones">Multiplicar</button>
                 <button type="submit" name="dividir" class="botones">Dividir</button>
             </div>
-
         </form>
-
-        <?php
-        if (isset($_POST["numero1"]) && isset($_POST["numero2"])) {
-            $numero1 = $_POST["numero1"];
-            $numero2 = $_POST["numero2"];
-
-            if (isset($_POST["sumar"])) {
-                $total = $numero1 + $numero2;
-            } else if (isset($_POST["restar"])) {
-                $total = $numero1 - $numero2;
-            } else if (isset($_POST["multiplicar"])) {
-                $total = $numero1 * $numero2;
-            } else if (isset($_POST["dividir"])) {
-                $total = $numero1 / $numero2;
-            }
-        } else {
-            $total = "";
-        }
-
-        ?>
-        <div id="total">
-            <input type="text" id="resultado" value="<?php echo $total; ?>" placeholder="Resultado" />
-        </div>
-
     </main>
 
+    <?php
+    if (isset($_POST["numero1"]) && isset($_POST["numero2"])) {
+        $numero1 = $_POST["numero1"];
+        $numero2 = $_POST["numero2"];
 
-    <footer>
+        if (isset($_POST["sumar"])) {
+            $total = $numero1 + $numero2;
+        } else if (isset($_POST["restar"])) {
+            $total = $numero1 - $numero2;
+        } else if (isset($_POST["multiplicar"])) {
+            $total = $numero1 * $numero2;
+        } else if (isset($_POST["dividir"])) {
+            $total = $numero1 / $numero2;
+        }
+    } else {
+        $total = "";
+    }
 
-    </footer>
+    ?>
+    <div id="total">
+        <input type="text" id="resultado" value="<?php echo $total; ?>" placeholder="Resultado" />
+    </div>
+
+
+
+
+    <footer> </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

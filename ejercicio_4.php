@@ -16,37 +16,39 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
         </nav>
     </header>
 
-    <div id="texto">
-        <p>
-            <p></p>
-        </p>
-        <form method="post" action="ejercicio_4.php">
-            <div id="valores">
-                <input type="text" name="precio" class="valores_2" placeholder="Ingresar Precio" />
-                <input type="text" name="cantidad" class="valores_2" placeholder="¿Cuantos pares lleva?" />
+    <main>
+        <div id="texto">
+            <h1>Descuento Zapatos</h1>
+            <form method="post" action="ejercicio_4.php">
+                <div id="valores">
+                    <input type="text" name="precio" class="valores_2" placeholder="Ingresar Precio" />
+                    <input type="text" name="cantidad" class="valores_2" placeholder="¿Cuantos pares lleva?" />
 
-            </div>
-            <div id="botones">
-                <button type="submit" name="calcular" class="botones">Calcular</button>
+                </div>
+                <div id="botones">
+                    <button type="submit" name="calcular" class="botones">Calcular</button>
 
-            </div>
-        </form>
+                </div>
+            </form>
+    </main>
 
-        <?php
+    <?php
+    if (isset($_POST["calcular"])) {
 
         if (isset($_POST["precio"]) && isset($_POST["cantidad"])) {
             $precio = $_POST["precio"];
             $cantidad  = $_POST["cantidad"];
-        }
 
-        if (isset($_POST["calcular"]))
-            if ($cantidad = 3) {
+            if ($cantidad == 3) {
                 $total = $precio * $cantidad;
                 $descuento = $total * 0.1;
+                $total_pagar = $total - $descuento;
+            } else if ($cantidad > 3 && $cantidad <= 8) {
+                $total = $precio * $cantidad;
+                $descuento = $total * 0.2;
                 $total_pagar = $total - $descuento;
             } else if ($cantidad > 8) {
                 $total = $precio * $cantidad;
@@ -56,22 +58,27 @@
                 $descuento = "";
                 $total_pagar = "";
             }
-        ?>
-        <div id="total">
-            <label for="">Descuento</label>
-            <input type="text" id="resultado" value="<?php echo $descuento; ?>" />
-        </div>
+        }
+    } else {
+        $descuento = "";
+        $total_pagar = "";
+    }
 
-        <div id="total">
-            <label for="">Total a pagar</label>
-            <input type="text" id="resultado" value="<?php echo $total_pagar; ?>" />
-        </div>
+    ?>
+    <div id="total">
+        <label for="">Descuento</label>
+        <input type="text" id="resultado" value="<?php echo $descuento; ?>" />
+    </div>
+    <div id="total">
+        <label for="">Total a pagar</label>
+        <input type="text" id="resultado" value="<?php echo $total_pagar; ?>" />
+    </div>
 
 
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
