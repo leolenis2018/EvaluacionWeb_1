@@ -60,18 +60,18 @@
             }
         }
     } else {
-        $descuento = "";
-        $total_pagar = "";
+        $descuento = "0";
+        $total_pagar = "0";
     }
 
     ?>
     <div id="total">
         <label for="">Descuento</label>
-        <input type="text" id="resultado" value="<?php echo $descuento; ?>" />
+        <input type="text" id="resultado" value="<?php echo "$ " . number_format($descuento, 0); ?>" />
     </div>
     <div id="total">
         <label for="">Total a pagar</label>
-        <input type="text" id="resultado" value="<?php echo $total_pagar; ?>" />
+        <input type="text" id="resultado" value="<?php echo "$ " . number_format($total_pagar, 0); ?>" />
     </div>
 
 
