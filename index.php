@@ -30,7 +30,7 @@
                         <a class="nav-link" href="ejercicio_3.php">Calcular IMC<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="ejercicio_4.php">Descuentos Zapatos<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="ejercicio_4.php">Descuentos Zapatería<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
