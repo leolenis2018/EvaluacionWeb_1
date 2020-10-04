@@ -21,7 +21,7 @@
 
     <main>
         <div id="texto">
-            <h1>Descuento Zapatos</h1>
+            <h1>Descuentos Zapatería</h1>
             <form method="post" action="ejercicio_4.php">
                 <div id="valores">
                     <input type="text" name="precio" class="valores_2" placeholder="Ingresar Precio" />
